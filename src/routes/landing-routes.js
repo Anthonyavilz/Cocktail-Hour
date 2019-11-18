@@ -12,7 +12,7 @@ import Login from '../Components/Landing-Pages/Login/Login';
 import Places from '../Components/User-Pages/Places/Places';
 import Drinks from '../Components/User-Pages/Drinks/Drinks';
 import ShoppingList from '../Components/User-Pages/Drinks/ShoppingList';
-import Settings from '../Components/User-Pages/Settings/Settings';
+// import Settings from '../Components/User-Pages/Settings/Settings';
 
 export default (
     <Switch>
@@ -28,6 +28,6 @@ export default (
         <Route path='/drinks/shopping-list' component={ShoppingList} />
         <Route path='/drinks' component={Drinks} />
         <Route path='/places' component={Places} />
-        <Route path='/settings' component={Settings} />
+        {/* <Route path='/settings' component={Settings} /> */}
     </Switch>
 )

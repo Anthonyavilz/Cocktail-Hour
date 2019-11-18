@@ -15,7 +15,7 @@ class UserLanding extends React.Component {
                     <h2>User Landing</h2>
                     <Link to='/places'><button>Places</button></Link>
                     <Link to='/drinks'><button>Drinks</button></Link>
-                    <Link to='/settings'><button>Settings</button></Link>
+                    {/* <Link to='/settings'><button>Settings</button></Link> */}
                 </div>
         )
     }
