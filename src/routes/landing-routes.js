@@ -1,17 +1,17 @@
 import React from "react";
 import {Switch, Route} from 'react-router-dom';
-import MainHome from '../Components/Landing-Pages/MainHome/MainHome'
-import Landing from '../Components/Landing-Pages/Landing/Landing';
-import UserLanding from '../Components/User-Pages/UserLanding'
-import About from '../Components/Landing-Pages/About/About';
-import AboutChristina from '../Components/Landing-Pages/About/AboutChristina/AboutChristina';
-import AboutMe from '../Components/Landing-Pages/About/AboutMe/AboutMe';
-import ContactForm from '../Components/Landing-Pages/About/ContactForm/ContactForm';
-import Register from '../Components/Landing-Pages/Register/Register';
-import Login from '../Components/Landing-Pages/Login/Login';
-import Places from '../Components/User-Pages/Places/Places';
-import Drinks from '../Components/User-Pages/Drinks/Drinks';
-import ShoppingList from '../Components/User-Pages/Drinks/ShoppingList';
+import MainHome from '../CComponents/Landing-Pages/MainHome/MainHome'
+import Landing from '../CComponents/Landing-Pages/Landing/Landing';
+import UserLanding from '../CComponents/User-Pages/UserLanding'
+import About from '../CComponents/Landing-Pages/About/About';
+import AboutChristina from '../CComponents/Landing-Pages/About/AboutChristina/AboutChristina';
+import AboutMe from '../CComponents/Landing-Pages/About/AboutMe/AboutMe';
+import ContactForm from '../CComponents/Landing-Pages/About/ContactForm/ContactForm';
+import Register from '../CComponents/Landing-Pages/Register/Register';
+import Login from '../CComponents/Landing-Pages/Login/Login';
+import Places from '../CComponents/User-Pages/Places/Places';
+import Drinks from '../CComponents/User-Pages/Drinks/Drinks';
+import ShoppingList from '../CComponents/User-Pages/Drinks/ShoppingList';
 // import Settings from '../Components/User-Pages/Settings/Settings';
 
 export default (
