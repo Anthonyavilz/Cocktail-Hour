@@ -342,7 +342,8 @@ import Parallax from "../../../components/Parallax/Parallax";
 import styles from "../../../assets/jss/material-kit-react/views/landingPage";
 
 // Sections for this page
-// import GoogleMaps from "../../../views/LandingPage/Sections/GoogleMaps";
+import GoogleMaps from "../../../views/LandingPage/Sections/GoogleMaps";
+import ProductSection from '../../../views/LandingPage/Sections/ProductSection';
 
 const dashboardRoutes = [];
 
@@ -378,11 +379,11 @@ export default function LandingPage(props) {
           </GridContainer>
         </div>
       </Parallax>
-      {/* <div className={classNames(classes.main, classes.mainRaised)}>
+      <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <GoogleMaps />
+          <ProductSection />
         </div>
-      </div> */}
+      </div>
       <Footer />
     </div>
   );

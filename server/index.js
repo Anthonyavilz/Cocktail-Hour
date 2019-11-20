@@ -77,4 +77,18 @@ app.post('/auth/user/new', register)
 app.post('/auth/user/login', login)
 app.post('/auth/user/logout', logout)
 
+//Bar Endpoints
+app.post('/api/bars', ) //add a bar
+app.get('/api/bars', ) //get all bars
+app.get('/api/bars/:barId', ) //get one bar
+app.put('/api/bars/:barId', ) //edit the bar
+app.delete('/api/bars/:barId', ) //delete bar
+
+//Drinks Endpoints
+app.post('/api/drinks', ) //add a drink
+app.get('/api/drinks', ) //get all drinks
+app.get('/api/drinks/:drinkId', ) //get one drink
+app.put('/api/drinks/:drinkId', ) //edit the drink
+app.delete('/api/drinks/:drinkId', ) //delete drink
+
 app.listen(SERVER_PORT, () => console.log(`Running on ${SERVER_PORT}`));

@@ -46,7 +46,7 @@ import Footer from "../../../components/Footer/Footer";
 import GridContainer from "../../../components/Grid/GridContainer";
 import GridItem from "../../../components/Grid/GridItem";
 import Button from "../../../components/CustomButtons/Button";
-import HeaderLinks from "../../../components/Header/HeaderLinks";
+import UserHeaderLinks from "../../../components/Header/UserHeaderLinks";
 import Parallax from "../../../components/Parallax/Parallax";
 
 import styles from "../../../assets/jss/material-kit-react/views/landingPage";
@@ -69,7 +69,7 @@ export default function LandingPage(props) {
         color="transparent"
         routes={dashboardRoutes}
         brand="Cocktail Hour"
-        rightLinks={<HeaderLinks />}
+        rightLinks={<UserHeaderLinks />}
         fixed
         changeColorOnScroll={{
           height: 400,
@@ -77,7 +77,7 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax filter image={require("../../../srcImages/OutdoorSetting.jpeg")}>
+      <Parallax filter image={require("../../../srcImages/Mosco_Mule.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>

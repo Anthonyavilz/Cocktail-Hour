@@ -67,21 +67,11 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Welcome User!</h1>
+              <h1 className={classes.title}>Welcome!</h1>
               <h4>
                 Welcome to Cocktail Hour, the site where you can search your favorite bars and create a list of your favorite drinks from them.
               </h4>
               <br />
-              <Button
-                color="danger"
-                size="lg"
-                href="https://www.youtube.com/channel/UCMNI_wdyMJeWxrbxkiZVoVQ"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fas fa-play" />
-                Bar Time
-              </Button>
             </GridItem>
           </GridContainer>
         </div>

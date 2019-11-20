@@ -36,7 +36,7 @@ class Login extends React.Component {
         return(
             <div>
                 <h2>Login</h2>
-                <Link to='/guest-landing'><button>Home</button></Link>
+                <div>
                 <form onSubmit={this.handleSubmit}>
                     <input name='username' placeholder='Username' onChange={this.handleInput} required/>
                     <br />
@@ -47,7 +47,9 @@ class Login extends React.Component {
                     <input type='reset' value='Clear' />
                     <br />
                     <Link to='/register'><button>Sign-Up</button></Link>
+                <Link to='/guest-landing'><button>Home</button></Link>
                 </form>
+                </div>
             </div>
         )
     }

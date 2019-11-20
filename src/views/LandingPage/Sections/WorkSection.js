@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom'; 
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -60,8 +61,13 @@ export default function WorkSection() {
                 }}
               />
               <GridContainer justify="center">
-                <GridItem xs={12} sm={12} md={4} className={classes.textCenter}>
+                <GridItem xs={12} sm={12} md={6} className={classes.textCenter}>
                   <Button color="primary">Send Message</Button>
+                </GridItem>
+                <GridItem xs={12} sm={12} md={6} className={classes.textCenter}>
+                 <Link to='/about/contact-form'>
+                 <Button color="primary">Really Send It</Button>
+                 </Link> 
                 </GridItem>
               </GridContainer>
             </GridContainer>

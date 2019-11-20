@@ -13,11 +13,11 @@ import Footer from "../../../components/Footer/Footer";
 import Button from "../../../components/CustomButtons/Button";
 import GridContainer from "../../../components/Grid/GridContainer";
 import GridItem from "../../../components/Grid/GridItem";
-import HeaderLinks from "../../../components/Header/HeaderLinks";
+import UserHeaderLinks from "../../../components/Header/UserHeaderLinks";
 import NavPills from "../../../components/NavPills/NavPills";
 import Parallax from "../../../components/Parallax/Parallax";
 
-import profile from "../../../srcImages/self.jpg";
+import profile from "../../../srcImages/Screen Shot 2019-11-01 at 3.14.44 PM.png";
 
 import studio1 from "../../../assets/img/examples/studio-1.jpg";
 import studio2 from "../../../assets/img/examples/studio-2.jpg";
@@ -48,7 +48,7 @@ export default function ProfilePage(props) {
       <Header
         color="transparent"
         brand="Cocktail Hour"
-        rightLinks={<HeaderLinks />}
+        rightLinks={<UserHeaderLinks />}
         fixed
         changeColorOnScroll={{
           height: 200,
@@ -56,7 +56,7 @@ export default function ProfilePage(props) {
         }}
         {...rest}
       />
-      <Parallax small filter image={require("../../../srcImages/ChristinaBackground.jpg")} />
+      <Parallax small filter image={require("../../../srcImages/image1.JPG")} />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
           <div className={classes.container}>
@@ -67,8 +67,8 @@ export default function ProfilePage(props) {
                     <img src={profile} alt="..." className={imageClasses} />
                   </div>
                   <div className={classes.name}>
-                    <h2 className={classes.title}>Christina Moreland</h2>
-                    <h5>Designer/illustrator</h5>
+                    <h2 className={classes.title}>[UserName would appear Here]</h2>
+                    <h5>Drink Connoisseur</h5>
                     <Button justIcon link className={classes.margin5}>
                       <i className={"fab fa-twitter"} />
                     </Button>
@@ -84,9 +84,7 @@ export default function ProfilePage(props) {
             </GridContainer>
             <div className={classes.description}>
               <p>
-              Moreland & Co. is the creative studio by Christina Moreland, an independent brand designer, illustrator, and visual storyteller. Originally hailing from a small and cozy town in Germany called Niederwerrn, Christina currently resides in Dallas, Texas. With a focus on brand design and illustration, her portfolio straddles a fine line between whimsical and refined. Her genuine passion for storytelling shows in her use of narrative as the driving force behind her brand development, creative direction and graphic design work.
-              Christina believes in quality over quantity, creating genuine partnerships and relationships, and story-driven design. As an illustrator and artist first and foremost, her work incorporates both tastefully subtle and graphically bold uses of illustration. Her work tends to blend simplicity with playfulness to create lively, thoughtful, and sophisticated brand identities.  
-              Besides doodling and shamelessly watching horrible reality TV shows, she also enjoys traveling, drawing comics, watching cartoons, stuffing her face with street tacos, listening to “lo-fi hip hop chill study music” and kissing her pup on the forehead.{" "}
+              Here for a Good Time not a Long Time{" "}
               </p>
             </div>
             <GridContainer justify="center">
@@ -96,7 +94,7 @@ export default function ProfilePage(props) {
                   color="primary"
                   tabs={[
                     {
-                      tabButton: "Studio",
+                      tabButton: "User Photo's",
                       tabIcon: Camera,
                       tabContent: (
                         <GridContainer justify="center">
@@ -126,44 +124,7 @@ export default function ProfilePage(props) {
                           </GridItem>
                         </GridContainer>
                       )
-                    },
-                    {
-                      tabButton: "Work",
-                      tabIcon: Palette,
-                      tabContent: (
-                        <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={work1}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work2}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work3}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={work4}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work5}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                        </GridContainer>
-                      )
-                    },
+                    },                    
                     {
                       tabButton: "Favorite",
                       tabIcon: Favorite,

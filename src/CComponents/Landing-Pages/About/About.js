@@ -44,6 +44,7 @@ import styles from "../../../assets/jss/material-kit-react/views/landingPage";
 
 // Sections for this page
 import TeamSection from "../../../views/LandingPage/Sections/TeamSection";
+import WorkSection from '../../../views/LandingPage/Sections/WorkSection';
 
 const dashboardRoutes = [];
 
@@ -66,7 +67,7 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax filter image={require("../../../srcImages/OutdoorSetting.jpeg")}>
+      <Parallax filter image={require("../../../srcImages/Stirr-DeepEllum-Tour-min.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
@@ -82,6 +83,7 @@ export default function LandingPage(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <TeamSection />
+          <WorkSection />
         </div>
       </div>
       <Footer />

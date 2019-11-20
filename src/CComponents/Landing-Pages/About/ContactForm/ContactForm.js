@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Axios from 'axios';
+import './ContactForm.css';
 
 class ContactForm extends React.Component {
     constructor() {
@@ -36,9 +37,9 @@ class ContactForm extends React.Component {
 
     render() {
         return (
-            <div>
+            <div class='background' >
                 <h2>Contact Form</h2>
-                <Link to='/guest-landing'><button>Home</button></Link>
+                <div class='form'>
                 <form onSubmit={this.handleSubmit} method='post'>
                     <input name='name' type='text' placeholder='First/Last Name' onChange={this.handleInput} />
                     <br />
@@ -49,9 +50,10 @@ class ContactForm extends React.Component {
                     <textarea name='message' rows='5' placeholder='Message Here' onChange={this.handleInput} />
                     <br />
                     <input type='submit' value='Submit' />
-                    <br />
                     <input type='reset' value='Clear' />
+                <Link to='/guest-landing'><button>Home</button></Link>
                 </form>
+                </div>
             </div>
         )
     }
