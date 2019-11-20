@@ -1,4 +1,4 @@
-.background {
+.main-background {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../srcImages/IntroPageImage.jpg);
     height: 100vh;
     width: 100vw;
@@ -8,7 +8,7 @@
     position: relative;
 }
 
-.middle-text {
+/* .middle-text {
     text-align: center;
     position: absolute;
     margin: 0 auto;
@@ -58,4 +58,4 @@
 .button:hover span:after {
     opacity: 1;
     right: 0;
-}
+} */

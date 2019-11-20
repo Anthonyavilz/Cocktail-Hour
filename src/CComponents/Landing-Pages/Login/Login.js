@@ -1,70 +1,3 @@
-// import React from 'react';
-// import {Link, Redirect} from 'react-router-dom';
-// import {connect} from 'react-redux';
-// import {registerUser, loginUser} from '../../../Redux/Reducers/userReducer';
-
-// class Login extends React.Component {
-//     constructor() {
-//         super();
-//         this.state = {
-//             username: '',
-//             password: ''
-//         }
-//     }
-
-//     handleInput = e => {
-//         this.setState({ [e.target.name]: e.target.value })
-//     }
-
-//     handleSubmit = e => {
-//         e.preventDefault();
-//         console.log(e.target);
-//             this.props.loginUser({
-//                 username: this.state.username,
-//                 password: this.state.password
-//             })
-//     }
-
-//     togglePassword = e => {
-//         e.preventDefault();
-
-//         this.setState(prevState => ({ showPassword: !prevState.showPassword }) )
-//     }
-
-//     render() {
-//         if (this.props.userId) return <Redirect to='/user-landing' />
-//         return(
-//             <div>
-//                 <h2>Login</h2>
-//                 <Link to='/guest-landing'><button>Home</button></Link>
-//                 <form onSubmit={this.handleSubmit}>
-//                     <input name='username' placeholder='Username' onChange={this.handleInput} required/>
-//                     <br />
-//                     <input type={this.state.showPassword ? 'text' : 'password'} name='password' placeholder='Password' onChange={this.handleInput} required/>
-//                     <button onClick={this.togglePassword}>Show/Hide</button> 
-//                     <br />
-//                     <input name='submit' type='submit' value="Submit" />
-//                     <input type='reset' value='Clear' />
-//                     <br />
-//                     <Link to='/register'><button>Sign-Up</button></Link>
-//                 </form>
-//             </div>
-//         )
-//     }
-// }
-
-// const mapStateToProps = reduxState => {
-//     return {
-//         userId: reduxState.userReducer.user.userId
-//     }
-// }
-
-// export default connect(mapStateToProps,
-//     {
-//         registerUser,
-//         loginUser
-//     })(Login)
-
 import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
@@ -72,7 +5,6 @@ import InputAdornment from "@material-ui/core/InputAdornment";
 import Icon from "@material-ui/core/Icon";
 // @material-ui/icons
 import Email from "@material-ui/icons/Email";
-import People from "@material-ui/icons/People";
 // core components
 import Header from "../../../components/Header/Header";
 import HeaderLinks from "../../../components/Header/HeaderLinks";
@@ -121,7 +53,7 @@ export default function LoginPage(props) {
             <GridItem xs={12} sm={12} md={4}>
               <Card className={classes[cardAnimaton]}>
                 <form className={classes.form}>
-                  <CardHeader color="primary" className={classes.cardHeader}>
+                  <CardHeader color="login" className={classes.cardHeader}>
                     <h4>Login</h4>
                     <div className={classes.socialLine}>
                       <Button
@@ -153,7 +85,7 @@ export default function LoginPage(props) {
                       </Button>
                     </div>
                   </CardHeader>
-                  <p className={classes.divider}>Or Be Classical</p>
+                  <p className={classes.divider}>Or</p>
                   <CardBody>
                     <CustomInput
                       labelText="Email..."
@@ -191,7 +123,7 @@ export default function LoginPage(props) {
                   </CardBody>
                   <CardFooter className={classes.cardFooter}>
                     <Button simple color="primary" size="lg">
-                      Get started
+                      Lets Drink!
                     </Button>
                   </CardFooter>
                 </form>

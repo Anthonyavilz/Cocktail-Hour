@@ -7,11 +7,11 @@ import Chat from "@material-ui/icons/Chat";
 import VerifiedUser from "@material-ui/icons/VerifiedUser";
 import Fingerprint from "@material-ui/icons/Fingerprint";
 // core components
-import GridContainer from "src/components/Grid/GridContainer.js";
-import GridItem from "src/components/Grid/GridItem.js";
-import InfoArea from "src/components/InfoArea/InfoArea.js";
+import GridContainer from "../../../components/Grid/GridContainer";
+import GridItem from "../../../components/Grid/GridItem";
+import InfoArea from "../../../components/InfoArea/InfoArea";
 
-import styles from 'src/assets/jss/material-kit-react/views/landingPageSections/productStyle.js';
+import styles from '../../../assets/jss/material-kit-react/views/landingPageSections/productStyle';
 
 const useStyles = makeStyles(styles);
 

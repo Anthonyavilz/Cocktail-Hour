@@ -7,20 +7,20 @@ import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 
 // core components
-import Header from "components/Header/Header.js";
-import Footer from "components/Footer/Footer.js";
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import Button from "components/CustomButtons/Button.js";
-import HeaderLinks from "components/Header/HeaderLinks.js";
-import Parallax from "components/Parallax/Parallax.js";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+import GridContainer from "../../components/Grid/GridContainer";
+import GridItem from "../../components/Grid/GridItem";
+import Button from "../../components/CustomButtons/Button";
+import HeaderLinks from "../../components/Header/HeaderLinks";
+import Parallax from "../../components/Parallax/Parallax";
 
 import styles from "../../assets/jss/material-kit-react/views/landingPage";
 
 // Sections for this page
-import ProductSection from "./Sections/ProductSection.js";
-import TeamSection from "./Sections/TeamSection.js";
-import WorkSection from "./Sections/WorkSection.js";
+import ProductSection from "../../views/LandingPage/Sections/ProductSection";
+import TeamSection from "../../views/LandingPage/Sections/TeamSection";
+import WorkSection from "../../views/LandingPage/Sections/WorkSection";
 
 const dashboardRoutes = [];
 
@@ -34,7 +34,7 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="Material Kit React"
+        brand="Cocktail Hour"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -43,7 +43,7 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax filter image={require("../../assets/img/faces/avatar.jpg")}>
+      <Parallax filter image={require("../../srcImages/OutdoorSetting.jpeg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>

@@ -24,3 +24,4 @@ yarn-debug.log*
 yarn-error.log*
 server/Controllers/sendEmailController.js
 src/Components/User-Pages/Places/API-Key.js
+src/CComponents/User-Pages/Places

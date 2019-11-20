@@ -8,11 +8,15 @@ import AboutChristina from '../CComponents/Landing-Pages/About/AboutChristina/Ab
 import AboutMe from '../CComponents/Landing-Pages/About/AboutMe/AboutMe';
 import ContactForm from '../CComponents/Landing-Pages/About/ContactForm/ContactForm';
 import Register from '../CComponents/Landing-Pages/Register/Register';
+import SDRegister from '../CComponents/Landing-Pages/Register/SDRegister';
 import Login from '../CComponents/Landing-Pages/Login/Login';
+import SDLogin from '../CComponents/Landing-Pages/Login/SDLogin';
 import Places from '../CComponents/User-Pages/Places/Places';
+import SDPlaces from '../CComponents/User-Pages/Places/SDPlaces';
 import Drinks from '../CComponents/User-Pages/Drinks/Drinks';
+import SDDrinks from '../CComponents/User-Pages/Drinks/SDDrinks';
 import ShoppingList from '../CComponents/User-Pages/Drinks/ShoppingList';
-// import Settings from '../Components/User-Pages/Settings/Settings';
+import Settings from '../CComponents/User-Pages/Settings/Settings';
 
 export default (
     <Switch>
@@ -23,11 +27,15 @@ export default (
         <Route path='/about/about-me' component={AboutMe} />
         <Route path='/about/contact-form' component={ContactForm} />
         <Route path='/about/' component={About} />
+        <Route path='/register/SDRegister' component={SDRegister} />
         <Route path='/register' component={Register} />
+        <Route path='/login/SDLogin' component={SDLogin} />
         <Route path='/login' component={Login} />
         <Route path='/drinks/shopping-list' component={ShoppingList} />
+        <Route path='/drinks/SDDrinks' component={SDDrinks} />
         <Route path='/drinks' component={Drinks} />
+        <Route path='/places/SDPlaces' component={SDPlaces} />
         <Route path='/places' component={Places} />
-        {/* <Route path='/settings' component={Settings} /> */}
+        <Route path='/settings' component={Settings} />
     </Switch>
 )
